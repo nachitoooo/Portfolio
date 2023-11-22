@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.br-2.animated{
+    opacity:0;
+}
+.br-1.animated{
+    transform: rotate(45deg) translate(9px, 8px);
+    transform-origin: 0% 100%;
+}
+.br-3.animated{
+    transform: rotate(-45deg) translate(-6px, 8px);
+    transform-origin: 0% 100%;
+}
