@@ -13,7 +13,7 @@
             document.documentElement.classList.remove('dark');
         }
     </script>
-    <title>igniTech</title>
+    <title>Ignacio Aristegui</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=ABeeZee&family=Arimo:ital,wght@0,500;0,700;1,500&family=Mukta:wght@200;700&family=Open+Sans:wght@500;600&family=Roboto:wght@100;500&family=Schibsted+Grotesk&display=swap" rel="stylesheet">
@@ -47,9 +47,9 @@
         <section class="my-0 flex flex-col lg:flex-row:h-[850px]">
             <div class="p-10 lg:w-[80%] lg:h-[500px] lg:self-center">
                 <h1 class="text-sky-600 dark:text-sky-300 text-2xl font-bold tracking-widest leading-10">Hi! im</h1>
-                <p class="py-2 text-3xl font-bold text-slate-600 dark:text-slate-300">igni </p>
+                <p class="py-2 text-3xl font-bold text-slate-600 dark:text-slate-300">Ignacio </p>
                 <p class="text-3xl font-bold text-slate-500 dark:text-slate-600">I develop web pages.</p>
-                <p class="mt-5 text-lg">I am a fullstack student. Currently, I dedicate myself more to the front-end side
+                <p class="mt-5 text-lg">I am a fullstack developer. I have knowdlege about HTML, Django, CSS, JavaScript and Python.
                 </p>
                 <!-- social media -->
                 <div class="py-6">
@@ -65,42 +65,45 @@
                 </div>
             </div>
            
-          <section
-            class="my-12 flex flex-col w-[84%] m-auto lg:flex-row lg:w-[87%] lg:my-28"
-            id="jobSection"
-          >
+            <section class="my-12 flex flex-col w-[84%] m-auto lg:flex-row lg:w-[87%] lg:my-28" id="jobSection">
+
+              <div class="my-5 lg:px-10 lg:my-5 lg:max-w-[800px]"> <!-- Ajusté el margen inferior aquí -->
+                <h3 class="text-2xl text-slate-700 dark:text-white my-5 px-12 font-bold tracking-widest md:text-center" id="center_title_ID1">
+                  projects
+                </h3>
             
-            <div class="my-5 lg:px-10 lg:my-0 lg:max-w-[800px]">
-              <h3
-        class="text-2xl text-slate-700 dark:text-white my-5 px-12 font-bold tracking-widest md:text-center" id="center_title_ID1"
-      >
-     projects
-     <div class="grid grid-cols-1 gap-8 md:grid-cols-3">
-      <!-- Proyecto 1 -->
-      <div class="project-card bg-cover bg-center relative" id="project1">
-        <div class="overlay absolute inset-0 bg-black opacity-50"></div>
-        
-        <div class="project-info absolute inset-0 flex flex-col items-center justify-center text-white">
-        </div>
-      </div>
-    
-      <!-- Proyecto 2 -->
-      <div class="project-card bg-cover bg-center relative" id="project2">
-        <div class="overlay absolute inset-0 bg-black opacity-50"></div>
-        <div class="project-info absolute inset-0 flex flex-col items-center justify-center text-white">
-          <h4 class="text-xl font-bold mb-2 items-center">Proyecto 2</h4>
-        </div>
-      </div>
-    
-      <!-- Proyecto 3 -->
-      <div class="project-card bg-cover bg-center relative" id="project3">
-        <div class="overlay absolute inset-0 bg-black opacity-50"></div>
-        <div class="project-info absolute inset-0 flex flex-col items-center justify-center text-white">
-          <h4 class="text-xl font-bold mb-2">Proyecto 3</h4>
-          <p class="text-sm">Descripción del Proyecto 3</p>
-        </div>
-      </div>
-    </div>
-    </main>
+                <main class="container mx-auto my-8">
+                  <div class="grid grid-cols-1 gap-8 md:grid-cols-3">
+                    <!-- Proyecto 1 -->
+                    <div class="project-card relative" id="project1">
+                      <div class="overlay absolute inset-0 bg-black opacity-50"></div>
+                      <div class="project-info absolute inset-0 flex flex-col items-center justify-center text-white">
+                        <h4 class="text-xl font-bold mb-2 items-center">project 1</h4>
+                        <!-- Contenido del Proyecto 1 -->
+                      </div>
+                      <img src="img/puravidafitness.jpeg" alt="Proyecto 1" class="w-full h-full object-cover object-center" />
+                    </div>
+            
+                    <!-- Proyecto 2 -->
+                    <div class="project-card relative" id="project2">
+                      <div class="overlay absolute inset-0 bg-black opacity-50"></div>
+                      <div class="project-info absolute inset-0 flex flex-col items-center justify-center text-white">
+                        <h4 class="text-xl font-bold mb-2 items-center">project 2</h4>
+                      </div>
+                      <img src="img/lacostacasa.jpeg" alt="Proyecto 2" class="w-full h-full object-cover object-center" />
+                    </div>
+            
+                    <!-- Proyecto 3 -->
+                    <div class="project-card relative" id="project3">
+                      <div class="overlay absolute inset-0 bg-black opacity-50"></div>
+                      <div class="project-info absolute inset-0 flex flex-col items-center justify-center text-white">
+                        <h4 class="text-xl font-bold mb-2">project 3</h4>
+                      </div>
+                      <img src="img/tkintersoftware.jpg" alt="Proyecto 3" class="w-full h-full object-cover object-center" />
+                    </div>
+                  </div>
+                </main>
+              </div>
+            </section>
 </body>
 </html>
