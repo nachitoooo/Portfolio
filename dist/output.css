@@ -1114,3 +1114,35 @@ video {
   display: flex;
   justify-content: flex-end;
 }
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.tech-icon {
+  text-align: center;
+  padding: 20px;
+  border: 1px solid #e2e8f0; /* Color del borde */
+  border-radius: 8px; /* Bordes suaves */
+  transition: background-color 0.3s ease; /* Transición suave de color de fondo */
+
+  /* Estilo cuando se pasa el ratón sobre el icono */
+  &:hover {
+    background-color: #f8fafc; /* Cambia el color de fondo al pasar el ratón */
+  }
+
+  i {
+    margin-bottom: 10px;
+  }
+
+  p {
+    margin: 0;
+  }
+}
+.line{
+  padding-top: 15px;
+}
+.tech-icon {
+  width: 40px; 
+  margin: 0 10px; 
+}
