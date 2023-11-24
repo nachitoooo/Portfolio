@@ -15,6 +15,20 @@
             document.documentElement.classList.remove('dark');
         }
     </script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function() {
+        var links = document.querySelectorAll('a[href^="#"]');
+        links.forEach(function(link) {
+          link.addEventListener("click", function(e) {
+            e.preventDefault();
+    
+            var targetId = this.getAttribute("href").substring(1);
+            var targetSection = document.getElementById(targetId);
+                targetSection.scrollIntoView({ behavior: "smooth" });
+          });
+        });
+      });
+    </script>
     <title>Ignacio Aristegui</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -23,14 +37,14 @@
 
 <body class="bg-sky-500 text-stone-900 dark:bg-slate-900 dark:text-cyan-50 font-Roboto">
     <header>
-        <nav class="flex justify-between py-10 m-auto px-10 text-lg font-medium tracking-widest md:items-center">
-            <a href=""><img src="./img/icono.png" alt="icon" width="28px"></a>
+        <nav class="flex justify-between py-10 m-auto px-10 text-lg font-medium tracking-widest md:items-center" id="home">
+            <a href=""><img src="./img/icono.png" alt="icon" width="53px"></a>
             <div id="menu"
                 class="dark:bg-slate-900 bg-white p-7 h-[380px] w-[320px] md:flex flex-col items-start justify-around rounded-lg text-dark dark:text-white md:flex-row md:w-full md:py-0 md:h-[50px] md:bg-inherit md:dark:bg-slate-900 hidden">
                 <ul class="flex h-5/6 flex-col justify-around md:flex-row md:justify-center w-full">
                     <li class="md:px-5 hover:text-sky-700"><a href="">about me</a></li>
                     <li class="md:px-5 hover:text-sky-700"><a href="">experience</a></li>
-                    <li class="md:px-5 hover:text-sky-700"><a href="">projects</a></li>
+                    <li class="md:px-5 hover:text-sky-700"><a href="">contact form</a></li>
                 </ul>
                 <button id="dark-button">
                     <i class="bi bi-moon-stars-fill text-sky-600 text-2xl"></i>
@@ -103,13 +117,14 @@
                   </div>
                 </main>
               </div>
+             
             </section>
 
             <div class="p-10 lg:w-[20%] lg:h-[500px] lg:self-center">
               <h2 class="text-sky-600 dark:text-sky-300 text-2xl font-bold tracking-widest leading-10">About Me</h2>
               <p class="py-2 text-lg text-slate-500 dark:text-slate-600">
-                ¡Hola! I'm Ignacio, a fullstack developer passionate about coding and creating awesome projects.
-                I specialize in HTML, Django, CSS, JavaScript, and Python.
+                ¡Hello! I'm Ignacio, a fullstack developer passionate about<br>coding and creating awesome projects.
+                I specialize in HTML, Django, CSS, <br>JavaScript, and Python.
               </p>
               <h3 class="text-2xl text-slate-700 dark:text-white my-5 px-12 font-bold tracking-widest md:text-center">
                 Technologies
@@ -138,7 +153,6 @@
             
           </div>
             <div class="footer">
-              <h1 class="footer__logo">For more projects and the source code, please visit my GitHub.</h1>
               <ul class="footer__nav">
                 <li class="nav__item">
                   <h2 class="nav__title">Media</h2>
@@ -149,11 +163,18 @@
                     </li>
             
                     <li>
-                      <a href="#"><i class="bi bi-linkedin"></i>‎ ‎  Linkedin</a>
+                      <a href="https://www.linkedin.com/in/ignacio-aristegui-6635b4270/"><i class="bi bi-linkedin"></i>‎ ‎  Linkedin</a>
                     </li>
-                
+                    <li>
+                      <a href="mailto:ignacioaristegui025@gmail.com"><i class="bi bi-envelope"></i> ignacioaristegui025@gmail.com</a>
+                      
+                    </li>
                   </ul>
-                </li>
+                  <div class="up_arrow">
+                    <a href="#home">
+                      <img src="img/flecha-arriba.png" class="footer-button" alt="up_arrow">
+                    </a>
+                  </div>
                   <span class="footerspan">Made with‎<span class="heart">♥</span>‎by Ignacio.</span>
                 </div>
               </div>
